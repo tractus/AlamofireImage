@@ -1,24 +1,26 @@
-// Gravatar.swift
 //
-// Copyright (c) 2015 Alamofire Software Foundation (http://alamofire.org/)
+//  Gravatar.swift
 //
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
+//  Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
 //
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 import Foundation
 import UIKit
@@ -29,7 +31,7 @@ private extension String  {
         let utf8String = trimmedString.cString(using: String.Encoding.utf8)!
         let stringLength = CC_LONG(trimmedString.lengthOfBytes(using: String.Encoding.utf8))
         let digestLength = Int(CC_MD5_DIGEST_LENGTH)
-        let result = UnsafeMutablePointer<CUnsignedChar>(allocatingCapacity: digestLength)
+        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLength)
 
         CC_MD5(utf8String, stringLength, result)
 
@@ -39,7 +41,7 @@ private extension String  {
             hash += String(format: "%02x", result[i])
         }
 
-        result.deallocateCapacity(digestLength)
+        result.deallocate(capacity: digestLength)
 
         return String(format: hash)
     }
@@ -98,8 +100,8 @@ public struct Gravatar {
         self.rating = rating
     }
 
-    public func url(size: CGFloat, scale: CGFloat = UIScreen.main().scale) -> Foundation.URL {
-        let url = try! Gravatar.baseURL.appendingPathComponent(email.md5_hash)
+    public func url(size: CGFloat, scale: CGFloat = UIScreen.main.scale) -> Foundation.URL {
+        let url = Gravatar.baseURL.appendingPathComponent(email.md5_hash)
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
 
         var queryItems = [defaultImage.queryItem, rating.queryItem]

@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4CD589AB1D45B0F500ADEF90 /* Cleanup Whitespace */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4CD589B21D45B0F500ADEF90 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */;
+			buildPhases = (
+				4CD589B31D45B0FD00ADEF90 /* Cleanup Whitespace */,
+			);
+			dependencies = (
+			);
+			name = "Cleanup Whitespace";
+			productName = "Cleanup Whitespace";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4C0893EC1B936A7A005125D9 /* UIImage+AlamofireImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0893EB1B936A7A005125D9 /* UIImage+AlamofireImageTests.swift */; };
 		4C0893F51B937404005125D9 /* UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0893F41B937404005125D9 /* UIImageTests.swift */; };
@@ -455,15 +469,9 @@
 		4C82907C1B927D13005E24C8 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C96A4771AAE9488008AE0B6 /* ImageDownloader.swift */; };
 		4C82907D1B927DA9005E24C8 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC0A081AB52BD90004D0B8 /* ImageFilter.swift */; };
 		4C96A4781AAE9488008AE0B6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C96A4771AAE9488008AE0B6 /* ImageDownloader.swift */; };
-		4CB2DBE61C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE31C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png */; };
-		4CB2DBE71C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE31C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png */; };
-		4CB2DBE81C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE31C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png */; };
-		4CB2DBE91C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE41C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png */; };
-		4CB2DBEA1C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE41C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png */; };
-		4CB2DBEB1C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE41C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png */; };
-		4CB2DBEC1C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png */; };
-		4CB2DBED1C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png */; };
-		4CB2DBEE1C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png */; };
+		4CB2DBEC1C632D3E000CC9C2 /* unicorn-blurred-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8.png */; };
+		4CB2DBED1C632D3E000CC9C2 /* unicorn-blurred-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8.png */; };
+		4CB2DBEE1C632D3E000CC9C2 /* unicorn-blurred-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8.png */; };
 		4CE5AABB1B9BF104003530D6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5AAAF1B9BF09A003530D6 /* Alamofire.framework */; };
 		4CE5AABE1B9BF111003530D6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5AAAF1B9BF09A003530D6 /* Alamofire.framework */; };
 		4CE5AAC11B9BF11F003530D6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5AAAF1B9BF09A003530D6 /* Alamofire.framework */; };
@@ -736,9 +744,7 @@
 		4C9043821AABBFC5001B4E60 /* AlamofireImage iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlamofireImage iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C96A4771AAE9488008AE0B6 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		4CB2B2F31C0270C500B442EA /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		4CB2DBE31C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unicorn-blurred-8-ios-8.1.png"; sourceTree = "<group>"; };
-		4CB2DBE41C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unicorn-blurred-8-ios-8.3.png"; sourceTree = "<group>"; };
-		4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unicorn-blurred-8-ios-9.png"; sourceTree = "<group>"; };
+		4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unicorn-blurred-8.png"; sourceTree = "<group>"; };
 		4CE5AAA61B9BF099003530D6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Carthage/Checkouts/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		4CE611321AABC24E00D35044 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE611471AABC5C900D35044 /* AlamofireImage OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlamofireImage OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1025,9 +1031,7 @@
 		4C58734C1B93EFFB00407E58 /* Core Image Filters */ = {
 			isa = PBXGroup;
 			children = (
-				4CB2DBE31C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png */,
-				4CB2DBE41C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png */,
-				4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png */,
+				4CB2DBE51C632D3E000CC9C2 /* unicorn-blurred-8.png */,
 				4C58734E1B93EFFB00407E58 /* unicorn-sepia.tone.png */,
 			);
 			path = "Core Image Filters";
@@ -1348,14 +1352,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Alamofire;
 				TargetAttributes = {
 					4C16B37C1BA9399500A66EF0 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 					};
 					4C16B3851BA9399500A66EF0 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 					};
 					4C4D4EC01B92976900C96855 = {
 						CreatedOnToolsVersion = 7.0;
@@ -1367,6 +1373,9 @@
 					4C9043811AABBFC5001B4E60 = {
 						CreatedOnToolsVersion = 6.2;
 						LastSwiftMigration = 0800;
+					};
+					4CD589AB1D45B0F500ADEF90 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 					4CE611281AABC24E00D35044 = {
 						LastSwiftMigration = 0800;
@@ -1402,6 +1411,7 @@
 				4C16B37C1BA9399500A66EF0 /* AlamofireImage tvOS */,
 				4C16B3851BA9399500A66EF0 /* AlamofireImage tvOS Tests */,
 				4C4D4EC01B92976900C96855 /* AlamofireImage watchOS */,
+				4CD589AB1D45B0F500ADEF90 /* Cleanup Whitespace */,
 			);
 		};
 /* End PBXProject section */
@@ -1486,7 +1496,6 @@
 				4C16B3E51BA93AEF00A66EF0 /* pirate-aspect.scaled.to.fit-50x50-@1x.png in Resources */,
 				4C16B3FF1BA93AEF00A66EF0 /* rainbow-circle.png in Resources */,
 				4C16B4191BA93AFD00A66EF0 /* rainbow-scaled-30x60-@1x.png in Resources */,
-				4CB2DBEB1C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png in Resources */,
 				4C16B4281BA93AFD00A66EF0 /* unicorn-scaled-60x30-@1x.png in Resources */,
 				4C16B3FD1BA93AEF00A66EF0 /* apple-circle.png in Resources */,
 				4C16B3B41BA93AE600A66EF0 /* apple-aspect.scaled.to.fill-50x50-@3x.png in Resources */,
@@ -1524,7 +1533,6 @@
 				4C16B3CD1BA93AE600A66EF0 /* unicorn-aspect.scaled.to.fill-50x50-@1x.png in Resources */,
 				4C16B41C1BA93AFD00A66EF0 /* rainbow-scaled-50x50-@1x.png in Resources */,
 				4C16B42E1BA93AFD00A66EF0 /* pirate-scaled.to.size.with.rounded.corners-100x100x20-@1x.png in Resources */,
-				4CB2DBE81C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png in Resources */,
 				4C16B3CE1BA93AE600A66EF0 /* unicorn-aspect.scaled.to.fill-50x50-@2x.png in Resources */,
 				4C16B40D1BA93AFD00A66EF0 /* apple-scaled-60x30-@1x.png in Resources */,
 				4C16B42D1BA93AFD00A66EF0 /* pirate-scaled.to.size.circle-100x100-@3x.png in Resources */,
@@ -1557,7 +1565,7 @@
 				4C16B3D81BA93AE600A66EF0 /* pirate-aspect.scaled.to.fill.size.with.rounded.corners-100x100x20-@3x.png in Resources */,
 				4C16B3FB1BA93AEF00A66EF0 /* unicorn-aspect.scaled.to.fit-60x30-@2x.png in Resources */,
 				4C16B41B1BA93AFD00A66EF0 /* rainbow-scaled-30x60-@3x.png in Resources */,
-				4CB2DBEE1C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png in Resources */,
+				4CB2DBEE1C632D3E000CC9C2 /* unicorn-blurred-8.png in Resources */,
 				4C16B4171BA93AFD00A66EF0 /* pirate-scaled-60x30-@2x.png in Resources */,
 				4C16B3C91BA93AE600A66EF0 /* rainbow-aspect.scaled.to.fill-60x30-@3x.png in Resources */,
 				4C16B4311BA93AFD00A66EF0 /* apple.jpg in Resources */,
@@ -1644,7 +1652,6 @@
 				4C58745D1B93EFFB00407E58 /* rainbow-scaled-50x50-@2x.png in Resources */,
 				4C5873911B93EFFB00407E58 /* apple-aspect.scaled.to.fill-60x30-@3x.png in Resources */,
 				4C0894E41B9382EB005125D9 /* apple.jpg in Resources */,
-				4CB2DBE91C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png in Resources */,
 				4C5873E31B93EFFB00407E58 /* apple-aspect.scaled.to.fit-60x30-@2x.png in Resources */,
 				4C5873B11B93EFFB00407E58 /* rainbow-aspect.scaled.to.fill-60x30-@1x.png in Resources */,
 				4C58747B1B93EFFB00407E58 /* pirate-scaled.to.size.circle-100x100-@2x.png in Resources */,
@@ -1682,7 +1689,6 @@
 				4C58741F1B93EFFB00407E58 /* pirate-circle.png in Resources */,
 				4C5873A71B93EFFB00407E58 /* rainbow-aspect.scaled.to.fill-30x60-@2x.png in Resources */,
 				4C0897E81B93B0FB005125D9 /* huge_map.jpg in Resources */,
-				4CB2DBE61C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png in Resources */,
 				4C5873EF1B93EFFB00407E58 /* pirate-aspect.scaled.to.fit-50x50-@2x.png in Resources */,
 				4C5873BB1B93EFFB00407E58 /* unicorn-aspect.scaled.to.fill-30x60-@3x.png in Resources */,
 				4C5873DB1B93EFFB00407E58 /* apple-aspect.scaled.to.fit-50x50-@1x.png in Resources */,
@@ -1715,7 +1721,7 @@
 				4C58747D1B93EFFB00407E58 /* pirate-scaled.to.size.circle-100x100-@3x.png in Resources */,
 				4C5873931B93EFFB00407E58 /* pirate-aspect.scaled.to.fill-30x60-@1x.png in Resources */,
 				4C58741D1B93EFFB00407E58 /* apple-circle.png in Resources */,
-				4CB2DBEC1C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png in Resources */,
+				4CB2DBEC1C632D3E000CC9C2 /* unicorn-blurred-8.png in Resources */,
 				4C58739F1B93EFFB00407E58 /* pirate-aspect.scaled.to.fill-60x30-@1x.png in Resources */,
 				4C58746F1B93EFFB00407E58 /* unicorn-scaled-50x50-@2x.png in Resources */,
 				4C5873DF1B93EFFB00407E58 /* apple-aspect.scaled.to.fit-50x50-@3x.png in Resources */,
@@ -1795,7 +1801,6 @@
 				4C58745E1B93EFFB00407E58 /* rainbow-scaled-50x50-@2x.png in Resources */,
 				4C5873921B93EFFB00407E58 /* apple-aspect.scaled.to.fill-60x30-@3x.png in Resources */,
 				4C0894E51B9382EB005125D9 /* apple.jpg in Resources */,
-				4CB2DBEA1C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.3.png in Resources */,
 				4C5873E41B93EFFB00407E58 /* apple-aspect.scaled.to.fit-60x30-@2x.png in Resources */,
 				4C5873B21B93EFFB00407E58 /* rainbow-aspect.scaled.to.fill-60x30-@1x.png in Resources */,
 				4C58747C1B93EFFB00407E58 /* pirate-scaled.to.size.circle-100x100-@2x.png in Resources */,
@@ -1833,7 +1838,6 @@
 				4C5874201B93EFFB00407E58 /* pirate-circle.png in Resources */,
 				4C5873A81B93EFFB00407E58 /* rainbow-aspect.scaled.to.fill-30x60-@2x.png in Resources */,
 				4C0897E91B93B0FB005125D9 /* huge_map.jpg in Resources */,
-				4CB2DBE71C632D3E000CC9C2 /* unicorn-blurred-8-ios-8.1.png in Resources */,
 				4C5873F01B93EFFB00407E58 /* pirate-aspect.scaled.to.fit-50x50-@2x.png in Resources */,
 				4C5873BC1B93EFFB00407E58 /* unicorn-aspect.scaled.to.fill-30x60-@3x.png in Resources */,
 				4C5873DC1B93EFFB00407E58 /* apple-aspect.scaled.to.fit-50x50-@1x.png in Resources */,
@@ -1866,7 +1870,7 @@
 				4C58747E1B93EFFB00407E58 /* pirate-scaled.to.size.circle-100x100-@3x.png in Resources */,
 				4C5873941B93EFFB00407E58 /* pirate-aspect.scaled.to.fill-30x60-@1x.png in Resources */,
 				4C58741E1B93EFFB00407E58 /* apple-circle.png in Resources */,
-				4CB2DBED1C632D3E000CC9C2 /* unicorn-blurred-8-ios-9.png in Resources */,
+				4CB2DBED1C632D3E000CC9C2 /* unicorn-blurred-8.png in Resources */,
 				4C5873A01B93EFFB00407E58 /* pirate-aspect.scaled.to.fill-60x30-@1x.png in Resources */,
 				4C5874701B93EFFB00407E58 /* unicorn-scaled-50x50-@2x.png in Resources */,
 				4C5873E01B93EFFB00407E58 /* apple-aspect.scaled.to.fit-50x50-@3x.png in Resources */,
@@ -1920,6 +1924,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CD589B31D45B0FD00ADEF90 /* Cleanup Whitespace */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Cleanup Whitespace";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\ndirectories=(Example Source Tests)\n\nfor directory in \"${directories[@]}\"\ndo\necho \"Cleaning whitespace in directory: $directory\"\nfind $directory -iregex '.*\\.swift' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C16B3781BA9399500A66EF0 /* Sources */ = {
@@ -2075,12 +2096,12 @@
 				INFOPLIST_FILE = "Source/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AlamofireImage;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -2099,12 +2120,13 @@
 				INFOPLIST_FILE = "Source/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AlamofireImage;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -2115,10 +2137,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AlamofireImage-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.AlamofireImage-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2130,10 +2152,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AlamofireImage-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.AlamofireImage-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2152,7 +2175,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AlamofireImage-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.AlamofireImage-watchOS";
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2176,10 +2199,11 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AlamofireImage-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.AlamofireImage-watchOS";
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -2201,6 +2225,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2208,6 +2233,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2220,12 +2246,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2251,6 +2278,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2258,16 +2286,18 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -2283,7 +2313,6 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = marker;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2292,13 +2321,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2308,7 +2335,6 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2317,19 +2343,17 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		4C9043911AABBFC5001B4E60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2338,23 +2362,21 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4C9043921AABBFC5001B4E60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -2375,6 +2397,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2382,16 +2405,18 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -2407,7 +2432,6 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2416,26 +2440,24 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = ReleaseTest;
 		};
 		4CA12FB21C2266AC00543972 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = ReleaseTest;
 		};
@@ -2445,6 +2467,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -2456,18 +2479,18 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = ReleaseTest;
 		};
 		4CA12FB41C2266AC00543972 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -2478,11 +2501,10 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = ReleaseTest;
 		};
@@ -2500,12 +2522,13 @@
 				INFOPLIST_FILE = "Source/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alamofire.AlamofireImage;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = ReleaseTest;
 		};
@@ -2516,10 +2539,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AlamofireImage-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.AlamofireImage-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = ReleaseTest;
 		};
@@ -2538,11 +2562,33 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.AlamofireImage-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.AlamofireImage-watchOS";
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = ReleaseTest;
+		};
+		4CD589AC1D45B0F500ADEF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CD589AD1D45B0F500ADEF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4CD589AE1D45B0F500ADEF90 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = ReleaseTest;
 		};
@@ -2552,6 +2598,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = marker;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -2563,13 +2610,11 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2579,6 +2624,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -2590,18 +2636,18 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.AlamofireImage;
 				PRODUCT_NAME = AlamofireImage;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		4CE611511AABC5C900D35044 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
@@ -2615,17 +2661,16 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4CE611521AABC5C900D35044 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -2636,11 +2681,10 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.alamofire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -2703,6 +2747,16 @@
 				4C9043911AABBFC5001B4E60 /* Debug */,
 				4C9043921AABBFC5001B4E60 /* Release */,
 				4CA12FB21C2266AC00543972 /* ReleaseTest */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD589B21D45B0F500ADEF90 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD589AC1D45B0F500ADEF90 /* Debug */,
+				4CD589AD1D45B0F500ADEF90 /* Release */,
+				4CD589AE1D45B0F500ADEF90 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

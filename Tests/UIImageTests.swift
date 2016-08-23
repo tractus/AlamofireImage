@@ -1,24 +1,26 @@
-// UIImageTests.swift
 //
-// Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
+//  UIImageTests.swift
 //
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
+//  Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
 //
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
 //
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 import AlamofireImage
 import Foundation
@@ -34,7 +36,7 @@ class UIImageTestCase: BaseTestCase {
     var rainbowImage: UIImage { return imageForResource("rainbow", withExtension: "jpg") }
     var unicornImage: UIImage { return imageForResource("unicorn", withExtension: "png") }
 
-    let scale = Int(round(UIScreen.main().scale))
+    let scale = Int(round(UIScreen.main.scale))
 
     let squareSize = CGSize(width: 50, height: 50)
     let horizontalRectangularSize = CGSize(width: 60, height: 30)
@@ -47,15 +49,15 @@ class UIImageTestCase: BaseTestCase {
         let URL = URLForResource("huge_map", withExtension: "jpg")
         let data = try! Data(contentsOf: URL)
 
-        let lock = Lock()
+        let lock = NSLock()
         var images: [UIImage?] = []
         let totalIterations = 1_500
 
         // When
         for _ in 0..<totalIterations {
-            let expectation = self.expectation(withDescription: "image should be created successfully")
+            let expectation = self.expectation(description: "image should be created successfully")
 
-            DispatchQueue.global(attributes: DispatchQueue.GlobalAttributes.qosDefault).async {
+            DispatchQueue.global(qos: .utility).async {
                 let image = UIImage(data: data)
                 let imageWithScale = UIImage(data: data, scale: CGFloat(self.scale))
 
@@ -68,7 +70,7 @@ class UIImageTestCase: BaseTestCase {
             }
         }
 
-        waitForExpectations(withTimeout: timeout, handler: nil)
+        waitForExpectations(timeout: timeout, handler: nil)
 
         // Then
         images.forEach {
@@ -81,15 +83,15 @@ class UIImageTestCase: BaseTestCase {
         let URL = URLForResource("huge_map", withExtension: "jpg")
         let data = try! Data(contentsOf: URL)
 
-        let lock = Lock()
+        let lock = NSLock()
         var images: [UIImage?] = []
         let totalIterations = 1_500
 
         // When
         for _ in 0..<totalIterations {
-            let expectation = self.expectation(withDescription: "image should be created successfully")
+            let expectation = self.expectation(description: "image should be created successfully")
 
-            DispatchQueue.global(attributes: DispatchQueue.GlobalAttributes.qosDefault).async {
+            DispatchQueue.global(qos: .utility).async {
                 let image = UIImage.af_threadSafeImageWithData(data)
                 let imageWithScale = UIImage.af_threadSafeImageWithData(data, scale: CGFloat(self.scale))
 
@@ -102,7 +104,7 @@ class UIImageTestCase: BaseTestCase {
             }
         }
 
-        waitForExpectations(withTimeout: timeout, handler: nil)
+        waitForExpectations(timeout: timeout, handler: nil)
 
         // Then
         images.forEach {
@@ -348,16 +350,7 @@ class UIImageTestCase: BaseTestCase {
 
         // Then
         if let blurredImage = blurredImage {
-            let expectedBlurredImage: UIImage
-
-            if #available(iOS 9.0, *) {
-                expectedBlurredImage = imageForResource("unicorn-blurred-8-ios-9", withExtension: "png")
-            } else if #available(iOS 8.3, *) {
-                expectedBlurredImage = imageForResource("unicorn-blurred-8-ios-8.3", withExtension: "png")
-            } else {
-                expectedBlurredImage = imageForResource("unicorn-blurred-8-ios-8.1", withExtension: "png")
-            }
-
+            let expectedBlurredImage = imageForResource("unicorn-blurred-8", withExtension: "png")
             let pixelsMatch = blurredImage.af_isEqualToImage(expectedBlurredImage)
 
             XCTAssertTrue(pixelsMatch, "pixels match should be true")
